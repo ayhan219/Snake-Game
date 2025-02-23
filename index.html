@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <canvas id="backgroundCanvas"></canvas>
+    <div class="game-container">
+        <div class="controls">
+            <button id="musicToggle" class="music-button">
+                <span class="music-icon">🔊</span>
+            </button>
+        </div>
+        <div id="game-board"></div>
+        <div class="score-board">
+            Score: <span id="score">0</span>
+        </div>
+    </div>
+    <audio id="gameMusic" loop>
+        <source src="8-bit-space-123218.mp3" type="audio/mp3">
+    </audio>
+    <audio id="foodSound">
+        <source src="arcade-8bit-fx-159064.mp3" type="audio/mp3">
+    </audio>
+    <audio id="gameOverSound">
+        <source src="game-over-arcade-6435.mp3" type="audio/mp3">
+    </audio>
+    <script src="game.js"></script>
+</body>
+</html> 
